@@ -1,23 +1,24 @@
 {
   "name": "smile-dashboard",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Dashboard de gestão para clínicas odontológicas",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/willian-vieira/smile-dashboard.git"
+    "url": "git+https://github.com/willianvieira-boop/SMILE-DASHBOARD.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["dental", "dashboard", "clinic"],
+  "author": "Willian Vieira",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/willian-vieira/smile-dashboard/issues"
+    "url": "https://github.com/willianvieira-boop/SMILE-DASHBOARD/issues"
   },
-  "homepage": "https://github.com/willian-vieira/smile-dashboard#readme",
+  "homepage": "https://github.com/willianvieira-boop/SMILE-DASHBOARD#readme",
   "dependencies": {
     "axios": "^1.15.2",
     "cors": "^2.8.6",
