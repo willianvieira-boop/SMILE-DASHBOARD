@@ -25,17 +25,17 @@ app.get('/health', (req, res) => {
 // Rota para Testar Firebase
 app.get('/api/firebase', (req, res) => {
   const firebaseConfig = {
-    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY ? '✅ Configurado' : '❌ Não configurado',
-    authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN ? '✅ Configurado' : '❌ Não configurado',
-    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID ? '✅ Configurado' : '❌ Não configurado'
+    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY ? 'Configurado' : 'Nao configurado',
+    authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN ? 'Configurado' : 'Nao configurado',
+    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID ? 'Configurado' : 'Nao configurado'
   };
   res.json(firebaseConfig);
 });
 
-// Porta dinâmica (importante para Vercel)
+// Porta dinamica (importante para Vercel)
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log(`✅ Servidor rodando em http://localhost:${PORT}`);
-  console.log(`🚀 Smile Dashboard está online!`);
+  console.log('Servidor rodando em http://localhost:' + PORT);
+  console.log('Smile Dashboard esta online!');
 });
