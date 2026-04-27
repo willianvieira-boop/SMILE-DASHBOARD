@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
+const dashboardRoutes = require('./src/routes/dashboardRoutes');
 
 const app = express();
 
@@ -31,6 +32,9 @@ app.get('/api/firebase', (req, res) => {
   };
   res.json(firebaseConfig);
 });
+
+// Usar rotas do dashboard
+app.use('/api/dashboard', dashboardRoutes);
 
 // Porta dinamica (importante para Vercel)
 const PORT = process.env.PORT || 3000;

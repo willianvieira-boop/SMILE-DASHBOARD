@@ -11,7 +11,11 @@
     "type": "git",
     "url": "git+https://github.com/willianvieira-boop/SMILE-DASHBOARD.git"
   },
-  "keywords": ["dental", "dashboard", "clinic"],
+  "keywords": [
+    "dental",
+    "dashboard",
+    "clinic"
+  ],
   "author": "Willian Vieira",
   "license": "ISC",
   "type": "commonjs",
@@ -23,6 +27,7 @@
     "axios": "^1.15.2",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "firebase-admin": "^13.8.0"
   }
 }
